@@ -9,8 +9,8 @@
 - [Contact](##Contact-me-via-email)
 ## Description
 > A simple calendar app for scheduling your work day using military time.
-![](./Develop/images/screenshot.JPG)
-![](./Develop/images/functionality.gif)
+![](/images/screenshot.JPG)
+![](/images/functionality.gif)
 ## How To Install The Application
 > Simply open the page using the link below and start adding tasks.
 https://alexandraws29.github.io/work-day-scheduler/
