@@ -30,3 +30,16 @@ function saveTask() {
 }
 
 $('#currentDate').text(currentDate);
+
+$(".edit").on('blur', 'textarea', function () {
+    var task = $(this)
+        .val()
+        .trim();
+
+    var newTask = $("<p>")
+        .addClass("text-box")
+        .text(task);
+
+    $(this).replaceWith(newTask);
+    saveTask();
+})
