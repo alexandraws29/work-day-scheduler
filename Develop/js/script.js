@@ -11,3 +11,12 @@ if (loadedTasks === null) {
         $(this).text(loadedTasks[index])
 })}
 
+timeState.each(function () {
+    let currentTime = parseInt($(this).text());
+    if (currentTime < hour) {
+        $(this).parent().addClass("past");
+    } else if (currentTime > hour) {
+        $(this).parent().addClass("future");
+    } else {
+        $(this).parent().addClass("present");
+}});
