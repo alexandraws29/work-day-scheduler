@@ -43,3 +43,5 @@ $(".edit").on('blur', 'textarea', function () {
     $(this).replaceWith(newTask);
     saveTask();
 })
+
+$('.saveBtn').on('click', saveTask);
