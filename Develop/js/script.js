@@ -20,3 +20,12 @@ timeState.each(function () {
     } else {
         $(this).parent().addClass("present");
 }});
+
+function saveTask() {
+    var givenTask = []
+    for (var i = 0; i < $(".text-box").length; i++) {
+        givenTask.push($(".text-box")[i].innerHTML);
+    }
+    localStorage.setItem("task", JSON.stringify(givenTask));
+}
+
