@@ -29,3 +29,4 @@ function saveTask() {
     localStorage.setItem("task", JSON.stringify(givenTask));
 }
 
+$('#currentDate').text(currentDate);
